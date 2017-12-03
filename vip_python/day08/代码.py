@@ -44,4 +44,29 @@ if __name__=='__main__':
 
 
 # 模块的重复导入，从第二次开始不会被重新加载代码，不会执行
+#重复导入模块，需要在最后＋  reload()   #参数-----》模块名称
 
+
+'''
+模块相关的特殊：__import___具有相关
+
+
+
+'''
+# import sys
+# print(dir(sys))
+#
+# sys=__import__('sys')   #参数：一定是字符串
+# print(sys)
+
+__import__('os').system('dir')
+
+#del sys.modules   #modules字典结构（模块名称，模块路径）
+
+#除了内置模块和库之外，第三方模块和库
+
+#包管理   安装模块/库
+# pip install 模块名称/库名称 （推荐）
+#pip uninstall 卸载模块名称/库名称
+
+#easy install 模块名称/库名称（不推荐使用

@@ -168,6 +168,14 @@ upper()转换字符串中的小写字母为大写
 
 '''
 name='heLLo'
-a1=name.capitalize()
+a1=name.capitalize()#首字母改大写
 print(a1)
+print(name.count('L'))#出现的次数
+print(name.endswith('o'))#判断是否为***结尾 返回true 或fasle
+print(name.find('o'))#find寻找某位元素
+print(name.islower())#判断全部是小写
+print(name.isupper())#判断是否为小写
+print(name.lower())#全部转换为小写
+print(name.upper())#全部转换为大写
+
 

@@ -5,8 +5,10 @@ import time
 from selenium import webdriver
 driver=webdriver.Chrome()
 driver.get("http://www.baidu.com")
+driver.maximize_window()    #窗口最大化
 driver.find_element_by_id("kw").send_keys("selenium")
 driver.find_element_by_id("su").click()
 time.sleep(5)
 driver.quit()
+
 

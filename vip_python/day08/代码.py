@@ -69,4 +69,4 @@ __import__('os').system('dir')
 # pip install 模块名称/库名称 （推荐）
 #pip uninstall 卸载模块名称/库名称
 
-#easy install 模块名称/库名称（不推荐使用
+#easy install 模块名称/库名称（不推荐使用）

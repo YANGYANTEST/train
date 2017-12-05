@@ -20,5 +20,6 @@ def func(content):
             print(content[:4])
         else:
             print(content)
-
-
+    else:
+        print("输入有误！")
+func((1,2,3))

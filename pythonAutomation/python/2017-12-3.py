@@ -24,14 +24,6 @@
 #
 # print('a');print('b');print('c')
 
-import math
-from math import *
-from math import  log2
-
-#import 模块名
-#from 模块名 import 方法（所有的方法是 * ）
-import selenium as sm
-from selenium import webdriver
 
 #打印出当前的路径
 # import sys

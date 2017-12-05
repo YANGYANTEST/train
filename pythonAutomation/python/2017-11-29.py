@@ -10,7 +10,6 @@ address="china"
 age=18
 money=100.126
 
-
 print(name,address)
 
 print(name+" "+address)

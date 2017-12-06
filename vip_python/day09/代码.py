@@ -50,3 +50,4 @@ print(callable(func))
 #slice()函数：切片
 print([22,34,54][slice(0,1)])
 print(range(12)[slice(1,12,1)])
+

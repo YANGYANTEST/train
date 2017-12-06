@@ -51,3 +51,67 @@ print(False+2)
 print([22,34,54][slice(0,1)])
 print(range(12)[slice(1,12,1)])
 
+#进制转换
+print(oct(20))      #十进制---》八进制
+print(bin(20))      #十进制----二进制
+print(hex(889))    #十进制----十六进制
+
+
+#序列操作
+print(all(['2'," ",'alina']))
+# print(all(False,True,'ben',12))
+#print(any(1,3)) #只要有一个为True
+
+#scort函数 scorted函数
+
+
+#反转函数：
+#print(list(reversed(1,2,3,4)))
+
+
+#面向对象
+class Myclass():
+    def run(self):
+        print("开始跑步")
+    def eat(self):
+        print("eating")
+    def dog_run(self):
+        print("小狗跑了")
+
+t=Myclass()
+print(hasattr(t,'run'))
+print(hasattr(t,'name'))
+func=getattr(t,'run')
+func()
+
+print(getattr(t,'name','0'))    #第三个参数：默认值（找不到的时候返回0）
+
+print(setattr(t,'name','yang'))
+
+
+#类型判断,返回TURE huo False
+print(isinstance(12,int))
+print(issubclass(Myclass,object))
+
+#其他内置函数
+print(str(1+3))
+print(type(str))
+print(repr('1+3'))      #repr函数----面向解释器
+print(eval('1+4'))      #eval----计算字符串表达式的值
+
+
+#compile()函数：字符串编译----字节代码，作用：提高了执行的效率
+# code=compile("print(’ben‘)",'','exec')
+# eval(code)
+#第一个参数：字符串（指令）
+#第二个参数：代码文件的名称，‘’（不是从文件获取）
+#第三个参数：编译执行代码的关系
+
+
+code=compile("open('print.py','a',encoding='utf-8').write(’12222‘)",'print.py')
+eval(code)
+
+
+
+
+我的名字我的名字我的名字我的名字

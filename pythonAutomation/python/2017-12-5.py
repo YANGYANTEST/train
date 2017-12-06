@@ -1,5 +1,3 @@
-
-
 #元祖 tuple
 tup="a","b","c"
 print(tup)

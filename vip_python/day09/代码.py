@@ -37,7 +37,7 @@ print(bool(4))      #0----False 1--------true
 # print(chr(97))          #互逆过程
 
 #callable()函数,判断参数是否可以调用
-print(callable(123))    #
+print(callable(123))    #False
 # print(callable(max))
 # print(callable(  ))
 
@@ -45,7 +45,7 @@ def func():
     pass
 func()
 print(callable(func))
-
+print(False+2)
 
 #slice()函数：切片
 print([22,34,54][slice(0,1)])

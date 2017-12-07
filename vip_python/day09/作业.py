@@ -13,18 +13,14 @@ while 2 in a_list:
    a_list.remove(2)
 print(a_list)
 
-
-
-code = compile("open('代码.py','a',encoding='utf-8').write('我的名字')",'代码.py','eval')
+code = compile("open('123.py','a',encoding='utf-8').write('45678')",'123.py','eval')
 eval(code)
-
-
 
 import random
 num = random.randint(0,100)
 print(num)
 for i in range(1,6):
-   a_num = int(input('输入一个数字'))
+   a_num = int(input('请输入一个数字：'))
    if a_num > num:
        print('猜大了')
    elif a_num < num:

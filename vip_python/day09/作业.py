@@ -33,7 +33,7 @@ for i in range(1,6):
        print("你的机会全部用完，谢谢")
    else:
        print("还剩下%s次机会" % str(5-i))
-print("游戏结束，程序退出！")
+print("游戏结束，程序退出")
 
 
 

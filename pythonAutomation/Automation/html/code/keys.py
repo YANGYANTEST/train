@@ -5,7 +5,7 @@ import os
 
 
 dr = webdriver.Chrome()
-file_path = 'file:///' + os.path.abspath('keys.html')
+file_path = "file:///C:/Users/15221/Desktop/python/20171210/html/html/code/form.html"
 
 dr.get(file_path)
 

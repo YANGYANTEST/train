@@ -3,8 +3,8 @@
 '''
 import time
 from selenium import webdriver
-# driver=webdriver.Chrome()
-driver=webdriver.Firefox()
+driver=webdriver.Chrome()
+#driver=webdriver.Firefox()
 driver.get("http://www.baidu.com")
 driver.maximize_window()    #窗口最大化
 driver.refresh()

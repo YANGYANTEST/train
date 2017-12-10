@@ -15,4 +15,3 @@ dr.find_element_by_id("inputEmail").click()
 dr.find_element_by_name('password').click()
 
 #by tagname
-print(dr.f)

@@ -116,15 +116,35 @@
 
 #__函数名次__特殊含义的函数
 class Person():
+    def __new__(cls, *args, **kwargs):
+        print("构造函数初始化之前执行")
+        return super().__new__(cls)   #super(超级)父类对象object初始化函数
+
     def __init__(self,name,age):
         self.name=name
         self.age=age
-    def __call__(self, *args, **kwargs):
-        def work():
-            print('l love you')
-        return work
+        print("初始化函数是函数之后执行")
+
+    # def __call__(self, *args, **kwargs):
+    #     def work():
+    #         print('l love you')
+    #     return work
         # print("当前对象被调用")
         # return self.name
+
 p1=Person('陈红',25)  #p1创建实例对象本身
-print(p1())#把实例对象当作函数在用
-p1()()
+# print(p1())#把实例对象当作函数在用
+# p1()()
+
+
+
+#访问作用域 __name__(具有特殊定义)
+class Student():
+    _min=10
+    _max=99
+
+def __init__(self,name,age):
+    self.name=name
+    self.age=age
+
+#def __work(self):

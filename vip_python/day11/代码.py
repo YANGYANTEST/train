@@ -192,9 +192,9 @@ a+模式：
 
 
 #a+模式里读数据,不小心读取的是空数据()
-with open('work.py','a+',encoding='utf-8')as f:
-      print(f.tell()) #w文件指针的位置
+with open('work.py','a+',encoding='utf-8')as f6:
+      print(f6.tell()) #w文件指针的位置
     # print(f.read()) #读取不到数据
-      f.seek(2) #移动到最前面
-      print(f.read())
-      print(f.tell())
+      f6.seek(2) #移动到最前面
+      print(f6.read())
+      print(f6.tell())

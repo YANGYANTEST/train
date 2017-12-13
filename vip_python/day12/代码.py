@@ -139,12 +139,87 @@ p1=Person('陈红',25)  #p1创建实例对象本身
 
 
 #访问作用域 __name__(具有特殊定义)
-class Student():
+class Person():
     _min=10
-    _max=99
+    __max=99
 
-def __init__(self,name,age):
-    self.name=name
-    self.age=age
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
 
-#def __work(self):
+    def __work(self):   #函数名称（没有）
+        print("我有私有方法")
+
+class Boy(Person):
+    def __init__(self,name,age,sex):
+        super().__init__(name,age)
+        self.sex=sex
+
+a_person=Person('tom',22)
+a_boy=Boy('lucy',13,'女')
+print(Person._min)
+#print(Person._max)
+
+print(Boy._min)     #子类可以获取（_属性：当前类内部，还有子类可以获取到）
+#print(Boy._max)     #私有变量（只能在当前内部使用）
+
+#a_person.__work()   #超出范围
+
+
+#继承和复写
+class Person():
+    def sleep(self):
+        print("person正在睡觉")
+
+class Boy(Person):
+    def sleep(self):
+        print("boy正在睡觉")
+    def play_game(self):
+        print('boy正在打游戏')
+
+
+p=Person()  #父类
+b=Boy()     #子类
+
+p.sleep()   #父类调用
+b.sleep()       #子类调用
+b.play_game()
+
+print(isinstance(p,Person))
+print(isinstance(b,Boy))
+print(isinstance(b,Person))
+print(isinstance(p,Boy))
+
+print("========================================")
+
+#多态  非类里面的函数（模块的全局函数）
+
+def show(p):
+    p.sleep()
+
+
+p=Person()
+b=Boy()
+
+show(p)     #同一个show，结果是不同的形态
+show(b)
+
+
+#鸭子形态:不在乎有没有继承关系，有没有接口方法（有同一样的接口状态就行，sleep）
+
+class Person():
+    def sleep(self):
+        print("person正在睡觉")
+
+class Boy():
+    def sleep(self):
+        print("boy正在睡觉")
+
+def show(p):
+    p.sleep()
+
+p=Person()
+b=Boy()
+
+show(p)
+show(b)

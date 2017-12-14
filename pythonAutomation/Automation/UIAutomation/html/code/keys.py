@@ -1,0 +1,25 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from time import sleep
+import os
+
+
+dr = webdriver.Chrome()
+file_path = "file:///C:/Users/15221/Desktop/python/20171210/html/html/code/form.html"
+
+dr.get(file_path)
+
+# copy content of A
+dr.find_element_by_id('A').send_keys((Keys.CONTROL, 'a'))
+dr.find_element_by_id('A').send_keys((Keys.CONTROL, 'x'))
+sleep(1)
+
+# paste to B
+dr.find_element_by_id('B').send_keys((Keys.CONTROL, 'v'))
+sleep(1)
+
+# # send keys to A
+dr.find_element_by_id('A').send_keys('watir', '-', 'webdriver', Keys.SPACE, 'is', Keys.SPACE, 'better')
+sleep(2)
+
+dr.quit()

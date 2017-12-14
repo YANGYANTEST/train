@@ -5,7 +5,7 @@ import time
 class test_cloudmusic(object):
 
     # 定义相关参数
-    cloudmusic_path = "C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe"
+    cloudmusic_path = "D:\WJ\网易云音乐PC版\cloudmusic.exe"
     cloudmusic_title = "[CLASS:OrpheusBrowserHost]"
     song = u"红玫瑰"
 

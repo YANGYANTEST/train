@@ -65,6 +65,7 @@ stu = Student()
 
 get_name(p1)  # 父类--->
 get_name(stu)   # 子类
+print("=====================================")
 
 #   3.完成python多态例子   爸爸有辆奥迪,儿子有保时捷
 print("使用题2中的Person类和Student类！！")

@@ -31,7 +31,7 @@ class Email(unittest.TestCase):
 
 testunit=unittest.TestSuite()
 testunit.addTest(Email("test_email_search"))
-filepath='E:\\train\\report.html'
+filepath='E:\\report.html'
 fp=open(filepath,'wb')
 runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title='登陆-测试报告',description='测试执行情况')
 runner.run(testunit)
